@@ -11,7 +11,8 @@
 
   "browser_action": {
     "default_icon": "none.png",
-    "default_title": "digital clock"
+    "default_title": "digital clock",
+    "default_popup": "weather.html"
   },
 
 	"background": {
@@ -23,5 +24,5 @@
 		"browser_style": true
 	},
 
-	"permissions":  ["storage"]
+	"permissions":  ["storage" , "activeTab"]
 }
