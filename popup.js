@@ -13,9 +13,17 @@ document.addEventListener('click', function(event){
 			var t =jsResult.main["temp"];
 			var p = jsResult.main["pressure"];
 			var h = jsResult.main["humidity"];
+			var min = jsResult.main["temp_min"];
+			var max = jsResult.main["temp_max"];
+			document.getElementById("ShowTempTitle").innerHTML = "Temperature Details: ";
+			document.getElementById("line1").innerHTML = "-------------------------";
 			document.getElementById("ShowTemp").innerHTML = "Temperature : "+t + " Celsius";
 			document.getElementById("ShowPressure").innerHTML = "Pressure : "+p + " Pa";
 			document.getElementById("ShowHumidity").innerHTML = "Humidity : "+h + " %";
+			document.getElementById("MinTemp").innerHTML = "Min Temp : "+min + " Celsius";
+			document.getElementById("MaxTemp").innerHTML = "Max Temp : "+max + " Celsius";
+			
+			
 			}
 			   }
 	}
