@@ -15,14 +15,19 @@ document.addEventListener('click', function(event){
 			var h = jsResult.main["humidity"];
 			var min = jsResult.main["temp_min"];
 			var max = jsResult.main["temp_max"];
+			var cloud = jsResult.weather[0].description;
+
 			document.getElementById("ShowTempTitle").innerHTML = "Temperature Details: ";
-			document.getElementById("line1").innerHTML = "-------------------------";
+			document.getElementById("line1").innerHTML = "----------------------------------";
 			document.getElementById("ShowTemp").innerHTML = "Temperature : "+t + " Celsius";
 			document.getElementById("ShowPressure").innerHTML = "Pressure : "+p + " Pa";
 			document.getElementById("ShowHumidity").innerHTML = "Humidity : "+h + " %";
 			document.getElementById("MinTemp").innerHTML = "Min Temp : "+min + " Celsius";
 			document.getElementById("MaxTemp").innerHTML = "Max Temp : "+max + " Celsius";
-			
+			document.getElementById("CloudTitle").innerHTML = "Cloud Details: ";
+			document.getElementById("Cloud").innerHTML = "Cloud Description: " + cloud ;
+			document.getElementById("line2").innerHTML = "----------------------------------";
+			document.getElementById("line3").innerHTML = "----------------------------------";
 			
 			}
 			   }
